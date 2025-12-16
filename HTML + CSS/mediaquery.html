@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery</title>
+
+    <style>
+    .blackbox{
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 450px;
+    background-color: rgb(33, 32, 32);
+    display: flex;
+    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    /* align-content: center; */  
+    }
+
+    .redbox{
+    margin: 10px;
+    border-radius: 10px;
+    border: 5px solid rgb(97, 3, 3);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(198, 14, 14);
+    text-align: center;
+    /* flex-grow: 3; */
+    
+    }
+    .bluebox{
+    margin: 10px;
+    border-radius: 10px;
+    border: 5px solid rgb(3, 36, 97);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(14, 61, 198);
+    text-align: center;
+    }
+    .greenbox{
+    margin: 10px;
+    border-radius: 10px;
+    border: 5px solid rgb(11, 86, 1);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(14, 198, 14);
+    text-align: center;
+    }
+
+     @media (max-width: 720px){
+        .blackbox{
+            flex-direction: column;
+        }
+    }
+      /* opposite for min-width   */
+     @media (max-width: 480px){             
+        .blackbox{
+            flex-direction: column;
+            background-color: crimson;
+        }
+    }
+
+
+    </style>
+    
+
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="blackbox">
+        <div class="redbox  red1">
+            <h1>1</h1>
+        </div>
+        <div class="bluebox blue1">
+            <h1>2</h1>
+        </div>
+        <div class="greenbox green1">
+            <h1>3</h1>
+        </div>
+    </div>
+</body>
+</html>

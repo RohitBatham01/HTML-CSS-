@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        .box1{
+            /* box-sizing: content-box increases box size as padding and border and opposite is border-box */
+            box-sizing: content-box;
+            background-color: gold;
+            height: 120px;
+            width: 500px;
+            border: 5px solid black;
+            padding: 20px;
+        }
+        .box2{
+            box-sizing: border-box;
+            background-color: chocolate;
+            width: 500px;
+            height: 120px;
+            border: 5px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <hr>
+    <hr>
+    <div class="box2"></div>
+</body>
+</html>
