@@ -1,0 +1,50 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: burlywood;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(red, green, blue, alpha);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(163, 43, 43);
+}
+
+.todo-input {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(118, 45, 39);
+    color: antiquewhite;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
